@@ -30,6 +30,27 @@ body{
         }
 
     }
+    &:target{
+        .content__item-black{
+        transition: all .2s ease-in-out;
+        color: rgba(255, 255, 255, 1);
+        background: rgba(0, 0, 0, 0);
+        }
+        .running-curd__track-1{
+            stroke-dashoffset: 1155;
+            stroke-dasharray: 1155;
+         //   animation: animdash 10s infinite 3s;
+            animation: animdash 6s infinite 1s;
+            stroke: black;
+        }
+        .running-curd__inner{
+            color: rgba(0, 0, 0, 0.3);
+            &-distance{
+                color: rgba(0, 0, 0, 0.8);
+            }
+        }
+
+    }
 }
 
 .running-curd__map{
