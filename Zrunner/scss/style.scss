@@ -30,7 +30,7 @@ body{
         }
 
     }
-    &:target{
+    &:focus{
         .content__item-black{
         transition: all .2s ease-in-out;
         color: rgba(255, 255, 255, 1);
