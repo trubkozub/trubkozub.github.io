@@ -1,0 +1,67 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 1.55;
+}
+
+.container{
+    position: relative;
+    height: 200px;
+    margin:auto;
+    width: 600px;
+}
+
+.map{
+
+
+
+
+}
+
+.map__fills{
+    position:absolute;
+    width: 600px;
+
+}
+
+.map__fills-image{
+    width: 600px;
+}
+
+.map__fills-item{
+    opacity: 0.1;
+    &:hover{
+        opacity: 0.4;
+        cursor: pointer;
+        transition: opacity .2s ease;
+    }
+}
+
+.fill__description{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    left: auto;
+    right: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 600px;
+    height: 300px;
+    border: solid 1px #ccc;
+    box-shadow: 5px 5px 8px 1px #ccc;
+    &-image{
+
+        img{
+            width: 250px;
+        }
+    }
+    &-text{
+        color: black;
+        text-align:justify;
+        padding: 10px;
+
+
+    }
+
+}
