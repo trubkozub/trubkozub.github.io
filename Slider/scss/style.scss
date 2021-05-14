@@ -1,0 +1,144 @@
+body{
+    background-color: rgb(13, 13, 14);
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.container{
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.serf{
+
+}
+
+.serf-slider{
+    padding-top: 110px;
+    .slick-slide{
+
+    }
+    .slick-slide:nth-child(4n + 1){
+        .serf-box{
+            margin-top: 32px;
+        }
+    }
+    .slick-slide:nth-child(4n + 3){
+        .serf-box{
+            margin-top: 89px;
+        }
+    }
+    .slider-arrows{
+        top :50px;
+    }
+    .slick-current{
+        .serf-box__inner{
+            background-color: rgba(#1c2121, .3);
+        }
+    }
+}
+
+.running-curd__track{
+    stroke-opacity: 0.2;
+
+}
+
+@keyframes animdash{
+    to{
+        stroke-dashoffset: 0;
+    }
+
+}
+
+.serf-box{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 750px;
+    position: relative;
+
+
+    &__inner{
+        min-height: 750px;
+        background-color: rgba(#1c2121, .85);
+        position: absolute;
+        transition: all .5s;
+        width: 100% ;
+        &:hover{
+            cursor: pointer;
+            background-color: rgba(#1c2121, .2);
+            color: rgba(#1c2121, .8);
+            .serf-box__inner-location{
+                color: rgba(#1c2121, .0);
+            }
+            .running-curd__track{
+                stroke-opacity: 0.8;
+                stroke-dashoffset: 1155;
+                stroke-dasharray: 1155;
+             //   animation: animdash 10s infinite 3s;
+                animation: animdash 4s infinite 0s;
+            }
+
+
+        }
+    }
+}
+
+.slider-arrows{
+    position: absolute;
+    top: 40px;
+    right: 80px;
+    z-index: 4;
+
+}
+
+.slider-arrows__left{
+    right: 125px;
+}
+
+.serf-box__inner{
+    position: relative;
+    color: #FFFFFF;
+    &-title{
+        font-style: normal;
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 36px;
+        text-transform: uppercase;
+        padding: 42px 0 0 42px;
+        width: 140px;
+    }
+    &-location{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 8px;
+        text-transform: uppercase;
+        transform: rotate(-90deg);
+        width: 0;
+        height: 0;
+        position: absolute;
+        top: 700px;
+        left: 20px;
+        white-space: nowrap;
+        span{
+            font-weight: 100;
+        };
+    }
+    &-distance{
+        right: 50px;
+        position: absolute;
+        top: 42px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 32px;
+        line-height: 32px;
+    }
+}
+
+.content__item-black{
+    position: absolute;
+    top: 0px;
+    left: -15px;
+}
